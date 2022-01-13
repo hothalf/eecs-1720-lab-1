@@ -1,2 +1,5 @@
 # eecs-1720-lab-1
-work
+
+
+This is Repo for EECS 1720
+Lab 1
