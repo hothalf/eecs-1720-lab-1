@@ -5,20 +5,11 @@
   "permissions": ["activeTab"],
   "browser_action": {
     "default_popup": "popup.html",
-
-
-    "default_icon": {
-      
-    }
+    "default_icon": "icon16.png",
+    "default_title": "Word change"
+    
   },
   "manifest_version": 2
-
-
-  /*
-  "browser_action": {
-    "default_icon": "icon16.png",
-    "default_popup": "popup.html"
-  },
 
   "content_scripts": [{
     "matches": [
@@ -36,7 +27,7 @@
     "default_popup"
   ]
 }
-*/
+
 
 }
 

@@ -5,4 +5,11 @@ window.addEventListener('load', (event) => {
     });
 
 
-    d
+    document.addEventListener("DOMContentLoaded",function(){
+
+        
+
+
+    })
+
+    
