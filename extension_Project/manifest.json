@@ -2,7 +2,12 @@
   "name": "Extension Project",
   "version": "1.0",
   "description": "Removes letters from google search to create random artistic line art of them",
-  "permissions": ["activeTab"],
+  "permissions": [
+    "tabs",
+  "activeTab",
+  "storage",
+  "default_popup"],
+
   "browser_action": {
     "default_popup": "popup.html",
     "default_icon": "icon16.png",
@@ -22,10 +27,7 @@
     "scripts": ["background.js"]
   },
 
-  "permissions": [
-    "storage",
-    "default_popup"
-  ]
+
 }
 
 
