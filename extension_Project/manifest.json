@@ -3,7 +3,6 @@
   "version": "1.0",
   "description": "Removes letters from google search to create random artistic line art of them",
   "permissions": [
-    "tabs",
   "activeTab",
   "storage",
   "default_popup"],
