@@ -23,6 +23,9 @@ window.addEventListener('load', (event) => {
     document.getElementById("colorUrlCheckBox").addEventListener("change", event =>{
         changeConfig("colorUrl", event.target.checked);
     });
+    document.getElementById("colorCheckBox").addEventListener("change", event =>{
+        changeConfig("colors", event.target.checked);
+    });
 
     document.getElementById("urlColorSelection").addEventListener("change", event =>{
         changeConfig("urlColor", event.target.value);
@@ -70,6 +73,7 @@ window.addEventListener('load', (event) => {
                 "removeUrl": false,
 
                 "colorUrl": false,
+                "colors" : false,
                 "urlColor": "#f530ff", //green, etc
                 
                 "twitterWidget": false,
@@ -99,6 +103,8 @@ window.addEventListener('load', (event) => {
         document.getElementById("removeUrlCheckBox").checked = configuration.removeUrl;
         
         document.getElementById("colorUrlCheckBox").checked = configuration.colorUrl;
+        document.getElementById("colorsCheckBox").checked = configuration.colorUrl;
+        document.getElementById("colorsselection").value = configuration.colorUrl;
         document.getElementById("urlColorSelection").value  = configuration.urlColor;
 
         document.getElementById("twitterWidgetCheckBox").checked = configuration.twitterWidget;

@@ -18,6 +18,7 @@ if(url.includes(".google.") && isSearch()){
     let configuration = {
         "removeArrow": false,
         "removeUrl": false,
+        "setcolour":false,
 
         "colorUrl": false,
         "urlColor": "#f530ff", //green, etc
@@ -77,6 +78,10 @@ function modifySearchResults(configuration){
     //Color Url////////////////////////////////////////////////////////////////
     if(configuration.colorUrl)
         setUrlColor(configuration.urlColor);
+
+    if(configuration.setcolour){
+        setColour(configuration.colors);
+    }
 
     //Move Url////////////////////////////////////////////////////////////////
     if(configuration.removeUrl){
@@ -146,6 +151,22 @@ function setUrlColor(urlColor){
             element.style.color = urlColor;
         });
     }
+}
+function setColour(setcolour){
+
+    if(setcolour != ""){
+        let listOfElementLists = [
+            document.getElementById("gsr")//id
+        ]
+
+        //Set the text color for each element.
+        forEachDoThis(listOfElementLists, function(element){
+            element.style.color = setcolour;
+        });
+    }
+
+
+
 }
 
 function decreaseResultDistance(className){
