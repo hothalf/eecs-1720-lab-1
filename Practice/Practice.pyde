@@ -1,23 +1,16 @@
-c, d = None, None
-
-def setup():
+def setup() :
   size(800, 800)
-  global c, d
-  c= color(random(255), random(255), random(255))
-  d= color(random(255), random(255), random(255))
-
-
+  smooth()
+  
 def draw():
-  global c, d
-  for y in range(width):
-    for x in range(width): # loop through every x
-        p = lerpColor(c, d, 1.0* x/width)
-        stroke(p)
-        line(x, 0, x, height)
-    line(y,0,y,height)
-
-
-def mousePressed():
-  global c, d
-  c= color(random(255), random(255), random(255))
-  d= color(random(255), random(255), random(255))
+  background(253)
+  stroke(0) 
+  noFill()  
+  constantFactor = 1.3
+  circleSize = 3 
+  
+  for i in range(0,20):
+    #draws 20 concentric circles of decreasing diameter and decreasing lineWeight
+    strokeWeight(circleSize/25.0) 
+    ellipse(width/2,height/2, circleSize, circleSize)
+    circleSize = circleSize * constantFactor 
