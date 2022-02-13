@@ -7,6 +7,7 @@ import cv2 # specific for accessing the camera and handling this type of live me
 
 import time # so we can pause for the camera to warm up or initiate 
 import sys # this is system - in case we want to access system
+
 import imutils # think of me as a utility library - for im or images
 from PIL import Image # image handling library _ PIL is for Pillow
 # so can also pip install (then import) Pillow
