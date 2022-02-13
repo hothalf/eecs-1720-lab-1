@@ -9,10 +9,12 @@ def setup():
 
 def draw():
   global c, d
-  for x in range(width): # loop through every x
-    p = lerpColor(c, d, 1.0* x/width)
-    stroke(p)
-    line(x, 0, x, height)
+  for y in range(width):
+    for x in range(width): # loop through every x
+        p = lerpColor(c, d, 1.0* x/width)
+        stroke(p)
+        line(x, 0, x, height)
+    line(y,0,y,height)
 
 
 def mousePressed():
