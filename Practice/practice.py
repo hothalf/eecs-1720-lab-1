@@ -4,10 +4,8 @@
 # could be useful ?
 
 import cv2 # specific for accessing the camera and handling this type of live media
-
 import time # so we can pause for the camera to warm up or initiate 
 import sys # this is system - in case we want to access system
-
 import imutils # think of me as a utility library - for im or images
 from PIL import Image # image handling library _ PIL is for Pillow
 # so can also pip install (then import) Pillow
@@ -57,7 +55,7 @@ cam_port = 2 # 0,1.. - depends on if/how many cameras attached
 # but not necessarily literally - for me 5 is associated with where the camera access is stored
 
 # VideoCapture(cam_port) can work too 
-video = cv2.VideoCapture(5) 
+video = cv2.VideoCapture(2) 
 # I could also instead load a video file by replacing the integer `5` here with "filename.ext" e.g., "mymovie.avi"
 # so this integer `5` could be a file name or it could indicates a camera and if more than one camera - which one
 
